@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Каваман</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+</head>
+<body>
+<!--start header-->
+<header id="header">
+    <div class="logo">
+        <a class="logo-pic" href="#"><img src="img/svg/logo.svg"></a>
+        <a class="search-pic" href="#">
+            <img class="img-search" src="img/svg/search.svg">
+            <input class="search" type="search" size="25" type="text" value="Хуткі пошук">
+            <img class="img-close" src="img/svg/close.svg">
+        </a>
+    </div>
+    <div class="header">
+        <ul class="links">
+            <li class="first">
+                <ul class="coffee-type">
+                    <li class="select-coffee" id="0">
+                        <label for="espresso">Эспрэса</label>
+                        <input id="espresso" type="radio" hidden/>
+                    </li>
+                    <li class="select-coffee" id="1">
+                        <input id="ristretto" type="radio" hidden/>
+                        <label for="ristretto">Рыстрэта</label>
+                    </li>
+                    <li class="select-coffee" id="2">
+                        <input id="lungo" type="radio" hidden/>
+                        <label for="lungo">Лунга</label>
+                    </li>
+                    <li class="select-coffee" id="3">
+                        <input id="americano" type="radio" hidden/>
+                        <label for="americano">Амерыкана</label>
+                    </li>
+                    <li class="select-coffee" id="4">
+                        <input id="flat-white" type="radio" hidden/>
+                        <label for="flat-white">Флэт вайт</label>
+                    </li>
+                    <li class="select-coffee" id="5">
+                        <input id="cappuccino" type="radio" hidden/>
+                        <label for="cappuccino">Капучына</label>
+                    </li>
+                    <li class="select-coffee" id="6">
+                        <input id="mocchiato" type="radio" hidden/>
+                        <label for="mocchiato">Мак'ята</label>
+                    </li>
+                    <li class="select-coffee" id="7">
+                        <input id="latte" type="radio" hidden/>
+                        <label for="latte">Латэ</label>
+                    </li>
+                    <li class="select-coffee" id="8">
+                        <input id="vienna" type="radio" hidden/>
+                        <label for="vienna">Па-венску</label>
+                    </li>
+                    <li class="select-coffee" id="9">
+                        <input id="latte-mocchiato" type="radio" hidden/>
+                        <label for="latte-mocchiato">Латэ мак'ята</label>
+                    </li>
+                    <li class="select-coffee" id="10">
+                        <input id="airish" type="radio" hidden/>
+                        <label for="airish">Айрыш</label>
+                    </li>
+                    <li class="select-coffee" id="11">
+                        <input id="raf-coffee" type="radio" hidden/>
+                        <label for="raf-coffee">Раф кава</label>
+                    </li>
+                    <li class="select-coffee" id="12">
+                        <input id="glace" type="radio" hidden/>
+                        <label for="glace">Глясэ</label>
+                    </li>
+                    <li class="select-coffee" id="13">
+                        <input id="mocha" type="radio" hidden/>
+                        <label for="mocha">Мока</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="second">
+                <input type="checkbox"/>
+                <span>На вынас</span>
+            </li>
+            <li class="third">
+                <ul class="city">
+                    <li class="select-city" id="14">
+                        <label for="minsk">Мінск</label>
+                        <input id="minsk" type="radio" hidden/>
+                    </li>
+                    <li class="select-city" id="15">
+                        <label for="gomel">Гомель</label>
+                        <input id="gomel" type="radio" hidden/>
+                    </li>
+                    <li class="select-city" id="16">
+                        <label for="mogilev">Магілёў</label>
+                        <input id="mogilev" type="radio" hidden/>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navigation">
+            <a class="navigation-pic pic-map" href="#"><img src="img/svg/map.svg"></a>
+            <a class="navigation-pic pic-grid" href="#"><img src="img/svg/grid.svg"></a>
+        </div>
+    </div>
+</header>
+<!--end header-->
+
+<!--start section-->
+<section>
+    <div class="section">
+        <div class="card radius" style="background: url(img/zerno.jpg)">
+            <div class="info">
+                <h2>
+                    <a href="#">Зерно</a>
+                </h2>
+                <address>Незалежнасці 46</address>
+                <hr>
+                <time>9...23</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/guru.jpg)">
+            <div class="info">
+                <h2><a href="#">Guru Coffee Club</a></h2>
+                <address>завулак Міхайлаўскі 4</address>
+                <hr>
+                <time>10...23</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/coffeemall.jpg)">
+            <div class="info">
+                <h2><a href="#">CoffeeMall</a></h2>
+                <address>Раманаўская Слабада 7</address>
+                <hr>
+                <time>9...23</time>
+                <div class="rating star four"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/ps.jpg)">
+            <div class="info">
+                <h2><a href="#">Пряности & Сладости</a></h2>
+                <address>Маскоўская 12</address>
+                <hr>
+                <time>9...21</time>
+                <div class="rating star four"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/wakeup.jpg)">
+            <div class="info">
+                <h2>
+                    <a href="#">Wake Up Coffee</a>
+                </h2>
+                <address>Веры Харужай 5</address>
+                <hr>
+                <time>8...23</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/jam.jpg)">
+            <div class="info">
+                <h2><a href="#">Jam</a></h2>
+                <address>Ленінградская 5</address>
+                <hr>
+                <time>9...23</time>
+                <div class="rating star four"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/mokoloko.jpg)">
+            <div class="info">
+                <h2><a href="#">Моколоко</a></h2>
+                <address>Якуба Коласа 37</address>
+                <hr>
+                <time>10...00</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/guru.jpg)">
+            <div class="info">
+                <h2><a href="#">Guru Coffee Club</a></h2>
+                <address>завулак Міхайлаўскі 4</address>
+                <hr>
+                <time>10...23</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/coffeemall.jpg)">
+            <div class="info">
+                <h2><a href="#">CoffeeMall</a></h2>
+                <address>Раманаўская Слабада 7</address>
+                <hr>
+                <time>9...23</time>
+                <div class="rating star four"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/ps.jpg)">
+            <div class="info">
+                <h2><a href="#">Пряности & Сладости</a></h2>
+                <address>Маскоўская 12</address>
+                <hr>
+                <time>9...21</time>
+                <div class="rating star four"></div>
+            </div>
+        </div>
+        <div class="card radius" style="background: url(img/wakeup.jpg)">
+            <div class="info">
+                <h2><a href="#">Wake Up Coffee</a></h2>
+                <address>Веры Харужай 5</address>
+                <hr>
+                <time>8...23</time>
+                <div class="rating star five"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end section-->
+
+<!--start footer-->
+<footer>
+    <div class="footer">
+        <a class="column" href="#">&copy; Каваман</a>
+        <a class="column" href="http://instagram.com/">Інстаграм</a>
+        <a class="column" href="http://facebook.com/">Фэйсбук</a>
+        <span class="column">Зроблена ў 2015 годзе<br>
+            ў <a href="http://skrotskystudio.com/">Студыі Вадзіма Скротскага</a></span>
+    </div>
+</footer>
+<!--end footer-->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js" charset="windows-1251"></script>
+</body>
+</html>
