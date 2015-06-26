@@ -32,28 +32,36 @@ jQuery(document).ready(function () {
                 if (grid[0].className == "grid radius") {
                     grid.removeClass("grid radius");
                     grid.addClass("card radius");
-                    $('.pic-grid img').css("opacity", "0.3");
+                    $('.pic-grid img').css("opacity", "0.4");
                 }
             }
         })
 
         $('.pic-map img').click(function () {
             var opacity = $('.pic-map img').css("opacity");
-            if (opacity == "0.3") {
+            if (opacity != "1") {
                 $('.pic-map img').css("opacity", "1");
             } else {
-                $('.pic-map img').css("opacity", "0.3");
+                $('.pic-map img').css("opacity", "0.4");
             }
         });
 
         $("li.select-coffee label").click(function () {
             var liCoffee = $(".select-coffee");
             var index = parseInt(this.parentElement.id);
-            if (liCoffee[index + 1].style.display != "block" || liCoffee[index - 1].style.display != "block") {
+            if (index < liCoffee.length / 2) {
+                var index1 = index + 1;
+            }
+            else {
+                var index1 = index - 1;
+            }
+            if (liCoffee[index1].style.display != "block") {
                 if (liCoffee[index].style.display == "none" || liCoffee[index].style.display == "" || liCoffee[index].style.display == "block") {
                     liCoffee.removeClass('active');
+                    this.parentElement.style.display = "none";
                     $("ul.coffee-type").css("border", "1px solid #664422");
                     liCoffee.show();
+                    liCoffee[0].style.display = "list-item";
                 } else {
                     liCoffee.hide();
                     $("ul.coffee-type").css("border", "none");
@@ -66,9 +74,16 @@ jQuery(document).ready(function () {
         $("li.select-city label").click(function () {
             var liCity = $(".select-city");
             var index = parseInt(this.parentElement.id);
-            if (liCity[index - 14 + 1].style.display != "block" || liCity[index - 14 - 1].style.display != "block") {
+            if (index > 15) {
+                var index1 = 15;
+            }
+            else {
+                var index1 = 16;
+            }
+            if (liCity[index1 - 14].style.display != "block") {
                 if (liCity[index - 14].style.display == "none" || liCity[index - 14].style.display == "" || liCity[index - 14].style.display == "block") {
                     liCity.removeClass('active');
+                    this.parentElement.style.display = "none";
                     $("ul.city").css("border", "1px solid #664422");
                     if (index == 14) {
                         this.firstChild.data = "Мінск";
@@ -80,6 +95,7 @@ jQuery(document).ready(function () {
                         this.firstChild.data = "Магілеў";
                     }
                     liCity.show();
+                    liCity[0].style.display = "list-item";
                 } else {
                     liCity.hide();
                     $("ul.city").css("border", "none");
@@ -155,6 +171,14 @@ jQuery(document).ready(function () {
             if (liCity[index - 14].className != "select-city active") {
                 $(".select-city").removeClass("active");
                 liCity[index - 14].className = "select-city active";
+            }
+        });
+        $('.pic-map img').click(function () {
+            var opacity = $('.pic-map img').css("opacity");
+            if (opacity != "1") {
+                $('.pic-map img').css("opacity", "1");
+            } else {
+                $('.pic-map img').css("opacity", "0.4");
             }
         });
     }
